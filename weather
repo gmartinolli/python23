@@ -1,0 +1,3 @@
+import json, requests
+APIkey = '07d40238fc934d79750916acad944490'
+location = 'Bolzano'
