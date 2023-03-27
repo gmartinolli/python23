@@ -5,7 +5,7 @@ import streamlit as st
 
 APIkey = '07d40238fc934d79750916acad944490'
 location = st.radio("Choose a location",
-                    'Bolzano', 'Merano', 'Bressanone')
+                    'Bolzano', 'Merano', 'Brixen')
 
 if location:
   url = 'http://api.openweather.org/data/2.5/weather?q=' + location + '&appid='+ APIkey + '&units=metric'
