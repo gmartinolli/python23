@@ -2,7 +2,7 @@ import json,requests
 import streamlit as st
 #from pprint import pprint
 keyword=input('Please, insert a keyword ')
-option = st.selectbox("Choose one option"
+option = st.selectbox("Choose one option",
                        ('similar meaning', 'sounds like', 'rhymes with')
 if option == 'similar meaning':
                       key = 'rel_syn='
