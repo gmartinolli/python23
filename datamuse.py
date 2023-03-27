@@ -10,6 +10,8 @@ elif option == 'sounds like':
                       key = 'sl='
 elif option == 'rhymes with':
                       key = 'rel_rhy='
+else:
+                      pass
                       
 url= 'https://api.datamuse.com/words?'+key + keyword
 response = requests.get(url)  
