@@ -1,7 +1,18 @@
 import json,requests
-from pprint import pprint
+import streamlit from st
+#from pprint import pprint
 keyword=input('Please, insert a keyword ')
-url= 'https://api.datamuse.com/words?sl=' + keyword
+option = st.selectbox("Choose one option"
+                       ('similar meaning', 'sounds like', 'rhymes with')
+if option == 'similar meaning':
+                      key = 'rel_syn='
+elif option == 'sounds like':
+                      key = 'sl='
+elif option == 'rhymes with':
+                      key = 'rel_rhy='
+                      
+url= 'https://api.datamuse.com/words?'+key + keyword
 response = requests.get(url)  
 dataFromDatamuse = json.loads(response.text)
+st.header('Datamuse')
 st.write(dataFromDatamuse)
