@@ -1,4 +1,5 @@
-#from gtts import gTTS
+#! python3
+from gtts import gTTS
 from googletrans import Translator
 import streamlit as st
 #import IPython.display as ipd
