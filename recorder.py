@@ -3,10 +3,10 @@ import streamlit as st
 import AudioRecorder as audioRecorderPolyfill
 window.MediaRecorder = AudioRecorder
 
-if (MediaRecorder.notSupported) {
+if (MediaRecorder.notSupported) (
   noSupport.style.display = 'block'
   dictaphone.style.display = 'none'
-}
+)
 
 recordButton.addEventListener('click', () => {
   #Request permissions to record audio
