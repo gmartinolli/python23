@@ -1,6 +1,6 @@
 import json,requests
 import streamlit as st
-import AudioRecorder as 'audio-recorder-polyfill'
+import AudioRecorder as audio-recorder-polyfill
 window.MediaRecorder = AudioRecorder
 
 if (MediaRecorder.notSupported) {
