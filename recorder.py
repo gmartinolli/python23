@@ -29,3 +29,5 @@ stopButton.addEventListener('click', () => {
   recorder.stream.getTracks().forEach(i => i.stop())
 })
 
+if st.button('listen')
+st.audio(Audiorecorder)
