@@ -4,7 +4,9 @@ from googletrans import Translator
 
 st.header("Lavoriamo sulla pronuncia inglese")
 st.write("App per lavorare sulla tua pronuncia inglese.")    
-welcome = st.radio("Scegli un\'azione",('scrivi una parola','registra parola', 'traduci parola')
+welcome = st.radio(
+  "Scegli un\'azione",
+  ('scrivi una parola','registra parola', 'traduci parola'))
                    if welcome == 'scrivi una parola':
                       st.write("scrivi")
                    if welcome == 'registra parola':
