@@ -4,16 +4,16 @@ from googletrans import Translator
 import streamlit as st
 
 st.header("Lavoriamo sulla pronuncia inglese")
-st.write("App per lavorare sulla tua pronuncia inglese.")    
+st.write("App per lavorare sulla tua pronuncia inglese. Per iniziare scegli quale azione vuoi fare:")    
 welcome = st.radio(
   "Scegli un\'azione",
   ('scrivi una parola','registra parola', 'traduci parola'))
 if welcome == 'scrivi una parola':
-    st.write("scrivi")
+    st.text_input()
 if welcome == 'registra parola':
     st.write("registra")
 if welcome == 'traduci parola':
-    st.write("traduci")
+    st.text_input()
 else:
     st.write("scegliere un\'azione")
                    
