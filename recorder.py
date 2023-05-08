@@ -4,7 +4,8 @@ import AudioRecorder as audioRecorderPolyfill
 window.MediaRecorder = AudioRecorder
 
 if (MediaRecorder.notSupported) (
-  noSupport.style.display = 'block'
+  #noSupport.style.display = 'block'
+  noSupport.style.display == 'block'
   dictaphone.style.display = 'none'
 )
 
