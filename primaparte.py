@@ -11,8 +11,10 @@ welcome = st.radio(
   ('scrivi una parola','registra parola', 'traduci parola'))
 if welcome == 'scrivi una parola':
     st.text_input("scrivi")
+    
 if welcome == 'registra parola':
     st.write("registra")
+    
 if welcome == 'traduci parola':
     word = st.text_input("scrivi"),
     translator = Translator(),
