@@ -16,7 +16,7 @@ if welcome == 'registra parola':
 if welcome == 'traduci parola':
     word = st.text_input("scrivi"),
     translator = Translator(),
-    ]#word = st.text_input('Type some text:')
+    #word = st.text_input('Type some text:')
     language = st.text_input('scegli lingua')
     translation = translator.translate(word,dest=language)
     
