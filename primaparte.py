@@ -20,10 +20,11 @@ if welcome == 'traduci parola':
     translator = Translator()
     #word = st.text_input('Type some text:')
     language = st.text_input('scegli lingua')
-    translation = translator.translate(word,dest=language)
+    if language:
+      translation = translator.translate(word,dest=language)
     
-    tts1=gTTS(word=translation.text, lang=language)
-st.write(tts1)
+      tts1=gTTS(word=translation.text, lang=language)
+      st.write(tts1)
 #else:
    # st.write("scegliere un\'azione")
                    
