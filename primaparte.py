@@ -1,7 +1,7 @@
 from gtts import gTTS
 from googletrans import Translator
 
-import st as streamlit
+import streamlit as st
 
 st.header("Lavoriamo sulla pronuncia inglese")
 st.write("App per lavorare sulla tua pronuncia inglese.")    
