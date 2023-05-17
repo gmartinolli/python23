@@ -6,7 +6,7 @@ from googletrans import Translator
 
 st.header("Lavoriamo sulla pronuncia inglese")
 #prima avevo st.text=tutto il testo in una riga
-st.write("app per lavorare sulla tua pronuncia inglese. Per iniziare scegli quale azione vuoi fare:") 
+st.subheader("app per lavorare sulla tua pronuncia inglese. Per iniziare scegli quale azione vuoi fare:") 
 
 welcome = st.radio(
   "Scegli un\'azione",
