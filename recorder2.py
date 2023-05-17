@@ -5,9 +5,9 @@ import base64
 #import http.client
 #url = "https://pronunciation-assessment1.p.rapidapi.com/pronunciation"
 st.title("Audio Recorder")
-audio = audiorecorder("Click to record", "Recording...")
 st.text_input("cosa vuoi dire?")
 text = st.text_input
+audio = audiorecorder("Click to record", "Recording...")
 if len(audio) > 0:
     # To play audio in frontend:
     st.audio(audio.tobytes())
@@ -36,6 +36,7 @@ if len(audio) > 0:
       }
 
     response = requests.post(url, json=payload, headers=headers)
+    st.write(response)
 
 #print(response.json())
 
