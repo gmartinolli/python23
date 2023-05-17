@@ -18,25 +18,25 @@ if len(audio) > 0:
 
   
     enc = base64.b64encode(open("audio.mp3", "rb").read())
-    #st.write(enc)
+    st.write(enc)
   
 
 
-    url = "https://pronunciation-assessment1.p.rapidapi.com/pronunciation"
+    #url = "https://pronunciation-assessment1.p.rapidapi.com/pronunciation"
 
-    payload = {
+   # payload = {
 	"audio_base64": enc,
 	"audio_format": "wav",
 	"text": text
 	}
-    headers = {
+  #  headers = {
 	"content-type": "application/json",
 	"X-RapidAPI-Key": "dbcc88b0c1mshcb664b65096f2fcp1238d4jsn2ca60dd6acb5",
 	"X-RapidAPI-Host": "pronunciation-assessment1.p.rapidapi.com"
       }
 
-    response = requests.post(url, json=payload, headers=headers)
-    st.write(response)
+   # response = requests.post(url, json=payload, headers=headers)
+   # st.write(response)
 
 #print(response.json())
 
