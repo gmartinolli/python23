@@ -21,7 +21,7 @@ if welcome == 'traduci parola':
     #word = st.text_input('Type some text:')
     language = st.text_input('scegli lingua')
     if language:
-      translation = translator.translate(word,dest=language)
+      translation = translator.translate(word, lang=language)
     
       tts1=gTTS(word=translation.text, lang=language)
       st.write(tts1)
