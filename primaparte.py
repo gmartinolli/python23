@@ -1,7 +1,8 @@
+import streamlit as st
 import json,requests
 from gtts import gTTS
 from googletrans import Translator
-import streamlit as st
+
 
 st.header("Lavoriamo sulla pronuncia inglese")
 st.write("App per lavorare sulla tua pronuncia inglese. Per iniziare scegli quale azione vuoi fare:") 
@@ -18,10 +19,7 @@ if welcome == 'registra parola':
  
 if welcome == 'traduci parola':
     translator = Translator()
-   
     word = st.text_input("cosa vuoi tradurre?")
-    
-    #word = st.text_input('Type some text:')
     lang_code = st.text_input("scegli una lingua: en = inglese, de = tedesco")
     if (word and lang_code):
       translate = translator.translate(word, dest=lang_code)
