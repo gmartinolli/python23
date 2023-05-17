@@ -25,7 +25,7 @@ if welcome == 'traduci parola':
     lang_code = st.text_input("scegli una lingua: en = inglese, de = tedesco")
     if (word and lang_code):
       translate = translator.translate(word, dest=lang_code)
-      tts1=gTTS(text=translation.text, lang=lang_code)
+      tts1=gTTS(text=translate.text, lang=lang_code)
       tts1.save('file.mp3')
       audio_file = open("file.mp3", "rb")
       st.audio(data=audio_file, format="audio/mp3", start_time=0)    
