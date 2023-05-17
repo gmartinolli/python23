@@ -16,12 +16,21 @@ if len(audio) > 0:
 
   
     enc = base64.b64encode(open("audio.mp3", "rb").read())
-    st.write(enc)
-
+    #st.write(enc)
+headers = {
+    'content-type': "application/json",
+    'X-RapidAPI-Key': "dbcc88b0c1mshcb664b65096f2fcp1238d4jsn2ca60dd6acb5",
+    'X-RapidAPI-Host': "pronunciation-assessment1.p.rapidapi.com"
 
 conn = http.client.HTTPSConnection("pronunciation-assessment1.p.rapidapi.com")
 
-payload =  enc
+payload = "{\r
+    \"audio_base64\": enc
+    ==\",\r
+    \"audio_format\": \"wav\",\r
+    \"text\": \"hello"\r
+}"
+
 
 conn.request("POST", "/pronunciation", payload, headers)
 
