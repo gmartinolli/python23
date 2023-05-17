@@ -3,7 +3,7 @@ import json,requests
 from audiorecorder import audiorecorder
 import base64
 #import http.client
-url = "https://pronunciation-assessment1.p.rapidapi.com/pronunciation"
+#url = "https://pronunciation-assessment1.p.rapidapi.com/pronunciation"
 st.title("Audio Recorder")
 audio = audiorecorder("Click to record", "Recording...")
 st.text_input("cosa vuoi dire?")
@@ -21,17 +21,22 @@ if len(audio) > 0:
     #st.write(enc)
   
 
+
+    url = "https://pronunciation-assessment1.p.rapidapi.com/pronunciation"
+
     payload = {
-	    "audio_base64": enc,
-	    "audio_format": "wav",
-	    "text": text
-       }
-    headers = {
-	    "content-type": "application/json",
-	    "X-RapidAPI-Key": "dbcc88b0c1mshcb664b65096f2fcp1238d4jsn2ca60dd6acb5",
-	    "X-RapidAPI-Host": "pronunciation-assessment1.p.rapidapi.com"
-    }
+	"audio_base64": enc,
+	"audio_format": "wav",
+	"text": text
+	}
+     headers = {
+	"content-type": "application/json",
+	"X-RapidAPI-Key": "dbcc88b0c1mshcb664b65096f2fcp1238d4jsn2ca60dd6acb5",
+	"X-RapidAPI-Host": "pronunciation-assessment1.p.rapidapi.com"
+      }
 
-    response = requests.post(url, json=payload, headers=headers)
+     response = requests.post(url, json=payload, headers=headers)
 
-    st.write(response)
+#print(response.json())
+
+      st.write(response)
