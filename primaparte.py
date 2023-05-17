@@ -1,6 +1,6 @@
+import json,requests
 from gtts import gTTS
 from googletrans import Translator
-
 import streamlit as st
 
 st.header("Lavoriamo sulla pronuncia inglese")
