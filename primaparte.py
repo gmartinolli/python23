@@ -5,7 +5,7 @@ from googletrans import Translator
 
 
 st.header("Lavoriamo sulla pronuncia inglese")
-st.write("app per lavorare sulla tua pronuncia inglese. Per iniziare scegli quale azione vuoi fare:") 
+st.text("app per lavorare sulla tua pronuncia inglese. Per iniziare scegli quale azione vuoi fare:") 
 
 welcome = st.radio(
   "Scegli un\'azione",
