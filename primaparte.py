@@ -15,20 +15,7 @@ if welcome == 'scrivi una parola':
 if welcome == 'registra parola':
     st.write("registra")
 
-translator = Translator()
-
-word = st.text_input("Please, insert a word/sentence")
-
-
-
-if (word and lang_code):
-  translate = translator.translate(word, dest=lang_code)
-  tts1=gTTS(text=translate.text, lang=lang_code)
-  tts1.save('file.mp3')
-
-  
-    
-    
+ 
 if welcome == 'traduci parola':
     translator = Translator()
    
@@ -37,7 +24,7 @@ if welcome == 'traduci parola':
     #word = st.text_input('Type some text:')
     lang_code = st.text_input("scegli una lingua: en = inglese, de = tedesco")
     if (word and lang_code):
-      translation = translator.translate(word, dest=lang_code)
+      translate = translator.translate(word, dest=lang_code)
       tts1=gTTS(text=translation.text, lang=language_code)
       tts1.save('file.mp3')
       audio_file = open("file.mp3", "rb")
