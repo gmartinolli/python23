@@ -4,10 +4,10 @@ from audiorecorder import audiorecorder
 import base64
 #import http.client
 #url = "https://pronunciation-assessment1.p.rapidapi.com/pronunciation"
-st.title("Audio Recorder")
+st.title("Controllo della pronuncia")
 st.text_input("cosa vuoi dire?")
 text = st.text_input
-audio = audiorecorder("Click to record", "Recording...")
+audio = audiorecorder("Registra", "in registrazione...")
 if len(audio) > 0:
     # To play audio in frontend:
     st.audio(audio.tobytes())
