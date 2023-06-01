@@ -18,10 +18,10 @@ if welcome == 'scrivi una parola':
     st.text_input("scrivi")
 if welcome == 'come si pronuncia?':
     word = st.text_input("scrivi")
-       if (word):
-         word.DictionaryIO()
-         word.phonetics()
-         st.write = word.phonetics()    
+    if (word):
+       word.DictionaryIO()
+       word.phonetics()
+       st.write = word.phonetics()    
           
 if welcome == 'registra parola':
     st.write("registra")
