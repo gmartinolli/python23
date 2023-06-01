@@ -1,6 +1,6 @@
 import json,requests
 import streamlit as st
-import VLC
+#import VLC
 #import dictionaryo
 #import vlc
 from dictionaryio import DictionaryIO
