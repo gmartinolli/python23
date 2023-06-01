@@ -3,7 +3,7 @@ import streamlit as st
 #import VLC
 #import dictionaryo
 #import vlc
-from dictionaryio import DictionaryIO
+#from dictionaryio import DictionaryIO
 from gtts import gTTS
 from googletrans import Translator
 
