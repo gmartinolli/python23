@@ -34,7 +34,7 @@ if welcome == 'traduci parola':
       st.write = tts1
    
  if welcome == 'come si pronuncia?':
-     word = st.text_input("scrivi")
+  word = st.text_input("scrivi")
      if (word):
        word.DictionaryIO()
        word.phonetics()
