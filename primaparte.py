@@ -16,7 +16,13 @@ welcome = st.radio(
   ('scrivi una parola','registra parola', 'traduci parola', 'come si pronuncia?'))
 if welcome == 'scrivi una parola':
     st.text_input("scrivi")
-    
+if welcome == 'come si pronuncia?':
+    word = st.text_input("scrivi")
+       if (word):
+         word.DictionaryIO()
+         word.phonetics()
+         st.write = word.phonetics()    
+          
 if welcome == 'registra parola':
     st.write("registra")
 
@@ -33,12 +39,7 @@ if welcome == 'traduci parola':
       st.audio(data=audio_file, format="audio/mp3", start_time=0)    
       st.write = tts1
    
- if welcome == 'come si pronuncia?':
-  word = st.text_input("scrivi")
-     if (word):
-       word.DictionaryIO()
-       word.phonetics()
-       st.write = word.phonetics()
+
 #word.meaning()
     
     
