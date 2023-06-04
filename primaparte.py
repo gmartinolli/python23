@@ -1,6 +1,6 @@
 import json,requests
 import streamlit as st
-from dictionaryio import dictionary
+from dictionaryIO import dictionary
 import vlc
 #from dictionaryio import DictionaryIO
 from gtts import gTTS
