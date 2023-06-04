@@ -1,7 +1,7 @@
 import json,requests
 import streamlit as st
 import dictionaryio 
-import vlc
+import vlc-python
 #from dictionaryio import DictionaryIO
 from gtts import gTTS
 from googletrans import Translator
