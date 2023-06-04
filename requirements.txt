@@ -3,4 +3,4 @@ gTTS
 audio-recorder-streamlit==0.0.8
 streamlit-audiorecorder
 dictionaryIO
-vlc
+vlc-python
