@@ -1,6 +1,7 @@
 import json,requests
 import streamlit as st
-from dictionaryio import DictionaryIO
+#from dictionaryio import DictionaryIO
+#import epitran
 import vlc
 #from dictionaryio import DictionaryIO
 from gtts import gTTS
@@ -17,7 +18,7 @@ welcome = st.radio(
 if welcome == 'scrivi una parola':
     st.text_input("scrivi")
     
-if welcome == 'come si pronuncia?':
+#if welcome == 'come si pronuncia?':
     word = st.text_input("scrivi")
     if (word):
        dictionaryio = DictionaryIO(word)
@@ -40,6 +41,7 @@ if welcome == 'traduci parola':
       audio_file = open("file.mp3", "rb")
       st.audio(data=audio_file, format="audio/mp3", start_time=0)    
       st.write = tts1
+      st.write = tts1.pronounciation
    
 
 #word.meaning()
