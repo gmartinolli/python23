@@ -17,7 +17,7 @@ welcome = st.radio(
 if welcome == 'scrivi una parola':
     st.text_input("scrivi")
 if welcome == 'come si pronuncia?':
-    word = st.text_input("scrivi")
+    word = DictionaryIO(st.text_input("scrivi"))
     if (word):
        dictionary = DictionaryIO() 
        word.dictionaryIO()
