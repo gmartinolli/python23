@@ -20,7 +20,7 @@ if welcome == 'come si pronuncia?':
     word = st.text_input("scrivi")
     if (word):
        dictionaryio = DictionaryIO() 
-       #word.dictionaryIO()
+       word.dictionaryIO()
        word.phonetics()
        st.write = word.phonetics()    
           
