@@ -6,6 +6,8 @@ import vlc
 #from dictionaryio import DictionaryIO
 from gtts import gTTS
 from googletrans import Translator
+import eng-to-ipa as p
+
 
 
 st.header("Lavoriamo sulla pronuncia inglese")
@@ -18,13 +20,11 @@ welcome = st.radio(
 if welcome == 'scrivi una parola':
     st.text_input("scrivi")
     
-#if welcome == 'come si pronuncia?':
+if welcome == 'come si pronuncia?':
     word = st.text_input("scrivi")
     if (word):
-       dictionaryio = DictionaryIO(word)
-       word.dictionaryio()
-       word.phonetics()
-       st.write = word.phonetics(word)    
+       p.convert()
+       st.write = p.convert()    
           
 if welcome == 'registra parola':
     st.write("registra")
