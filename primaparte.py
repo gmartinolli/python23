@@ -41,8 +41,7 @@ if welcome == 'traduci parola':
       audio_file = open("file.mp3", "rb")
       st.audio(data=audio_file, format="audio/mp3", start_time=0)    
       st.write = tts1
-      st.write = tts1.pronounciation
-   
+         
 
 #word.meaning()
     
