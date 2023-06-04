@@ -2,5 +2,5 @@ googletrans==4.0.0-rc1
 gTTS
 audio-recorder-streamlit==0.0.8
 streamlit-audiorecorder
-dictionaryo
+DictionaryIO
 vlc-python
