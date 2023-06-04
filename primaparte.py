@@ -19,7 +19,7 @@ if welcome == 'scrivi una parola':
 if welcome == 'come si pronuncia?':
     word = st.text_input("scrivi")
     if (word):
-       word.dictionaryIO(word)
+       word.dictionaryIO()
        word.phonetics(word)
        st.write = word.phonetics(word)    
           
