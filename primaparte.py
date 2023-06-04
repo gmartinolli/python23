@@ -1,8 +1,6 @@
 import json,requests
 import streamlit as st
-#import VLC
-#import dictionaryo
-#import vlc
+import dictionaryio 
 #from dictionaryio import DictionaryIO
 from gtts import gTTS
 from googletrans import Translator
@@ -13,7 +11,7 @@ st.header("Lavoriamo sulla pronuncia inglese")
 st.subheader("app per lavorare sulla tua pronuncia inglese. Per iniziare scegli quale azione vuoi fare:") 
 
 welcome = st.radio(
-  "Scegli un\'azione",
+  "Ciao! Scegli cosa vorresti fare:",
   ('scrivi una parola','registra parola', 'traduci parola', 'come si pronuncia?'))
 if welcome == 'scrivi una parola':
     st.text_input("scrivi")
@@ -44,8 +42,8 @@ if welcome == 'traduci parola':
 #word.meaning()
     
     
-#else:
-   # st.write("scegliere un\'azione")
+else:
+   st.write("scegliere un\'azione")
                    
            
                 
