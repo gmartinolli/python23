@@ -1,9 +1,6 @@
 import json,requests
 import streamlit as st
-#from dictionaryio import DictionaryIO
-#import epitran
 import vlc
-#from dictionaryio import DictionaryIO
 from gtts import gTTS
 from googletrans import Translator
 import eng_to_ipa as p
@@ -46,8 +43,8 @@ if welcome == 'traduci parola':
 #word.meaning()
     
     
-else:
-   st.write("scegliere un\'azione")
+#else:
+  # st.write("scegliere un\'azione")
                    
            
                 
