@@ -20,7 +20,7 @@ if welcome == 'scrivi una parola':
 if welcome == 'come si pronuncia?':
     word = st.text_input("scrivi")
     if (word):
-       p.convert(word)
+       eng_to_ipa.p.convert(word)
        st.write = p.convert(word)    
           
 if welcome == 'registra parola':
