@@ -17,12 +17,11 @@ welcome = st.radio(
 if welcome == 'scrivi una parola':
     st.text_input("scrivi")
 if welcome == 'come si pronuncia?':
-    dictionaryio = DictionaryIO()
-    pron = st.text_input("scrivi")
-    if (pron):
-       pron.dictionaryIO()
-       pron.phonetics()
-       st.write = pron.phonetics()    
+    word = st.text_input("scrivi")
+    if (word):
+       word.dictionaryIO(word)
+       word.phonetics(word)
+       st.write = word.phonetics(word)    
           
 if welcome == 'registra parola':
     st.write("registra")
