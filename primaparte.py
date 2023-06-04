@@ -20,8 +20,8 @@ if welcome == 'scrivi una parola':
 if welcome == 'come si pronuncia?':
     word = st.text_input("scrivi")
     if (word):
-       p.convert()
-       st.write = p.convert()    
+       p.convert(word)
+       st.write = p.convert(word)    
           
 if welcome == 'registra parola':
     st.write("registra")
