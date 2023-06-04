@@ -6,7 +6,7 @@ import vlc
 #from dictionaryio import DictionaryIO
 from gtts import gTTS
 from googletrans import Translator
-import eng-to-ipa as p
+import eng_to_ipa as p
 
 
 
